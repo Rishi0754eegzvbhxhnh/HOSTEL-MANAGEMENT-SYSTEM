@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  background-color: #1a1a2e;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.hero {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.auth-buttons {
+  margin: 30px;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin {
+  background-color: #007bff;
+  color: white;
+}
+
+.signup {
+  background-color: #28a745;
+  color: white;
+}
+
+.signin:hover {
+  background-color: #0056b3;
+}
+
+.signup:hover {
+  background-color: #1e7e34;
+}
