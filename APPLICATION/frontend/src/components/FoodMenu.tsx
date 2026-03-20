@@ -135,7 +135,7 @@ const FoodMenu = () => {
                     </section>
 
                     {/* Leave / Absence Notification Form */}
-                    <section className="leave-section">
+                    {/*<section className="leave-section">
                         <h2>🏠 Going Out? Notify the Hostel</h2>
                         <p className="leave-subtitle">If you'll be absent from the hostel, inform the warden in advance so your meal isn't wasted.</p>
                         {leaveSubmitted && (
@@ -165,7 +165,7 @@ const FoodMenu = () => {
                             </div>
                             <button type="submit" className="leave-submit-btn">📩 Submit Absence Notice</button>
                         </form>
-                    </section>
+                    </section>*/}
 
                     {/* Food Preference Section */}
                     <section className="preference-section">

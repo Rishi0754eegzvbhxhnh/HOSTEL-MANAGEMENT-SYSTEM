@@ -196,7 +196,7 @@
     opacity: 0.85;
 }
 
-/* ---- Leave Notification Form ---- */
+/* ---- Leave Notification Form ---- 
 .leave-section {
     margin-top: 35px;
     padding: 35px;
@@ -231,7 +231,7 @@
     animation: fadeIn 0.5s ease;
 }
 
-.leave-form {
+/*.leave-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -274,7 +274,7 @@
     background: rgba(255, 255, 255, 0.15);
 }
 
-.leave-submit-btn {
+/*.leave-submit-btn {
     padding: 14px 30px;
     background: linear-gradient(135deg, #3498db, #1abc9c);
     color: white;
@@ -292,7 +292,7 @@
 .leave-submit-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(52, 152, 219, 0.5);
-}
+}*/
 
 .tomorrows-special {
     margin-top: 40px;
