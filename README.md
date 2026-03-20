@@ -8,8 +8,6 @@ A full-stack **MERN** (MongoDB, Express, React, Node.js) web application for man
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?style=flat-square&logo=mongodb)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python)
 
----
-
 ## 📁 Project Structure
 
 ```
