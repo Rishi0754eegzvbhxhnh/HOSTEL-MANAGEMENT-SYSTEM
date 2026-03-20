@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+APPLICATION/frontend/node_modules/
+
+# Environment Variables - NEVER commit these!
+.env
+backend/.env
+*.env
+
+# Build outputs
+APPLICATION/frontend/dist/
+APPLICATION/frontend/build/
+
+# Uploaded files
+backend/uploads/
+
+# Lock files (optional - can commit if preferred)
+# package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE files
+.vscode/
+.idea/

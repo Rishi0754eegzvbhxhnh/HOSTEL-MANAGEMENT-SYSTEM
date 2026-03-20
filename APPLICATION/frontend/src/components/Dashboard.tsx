@@ -37,13 +37,14 @@ const Dashboard = () => {
                         <span className="icon">💳</span>
                         <span className="nav-text">Fee Payment</span>
                     </li>
-                    <li className="nav-item" title="Complaints">
-                        <span className="icon">📝</span>
-                        <span className="nav-text">Complaints</span>
-                    </li>
+
                     <li className="nav-item" title="Complaints" onClick={() => navigate('/complaints')}>
                         <span className="icon">📋</span>
                         <span className="nav-text">Complaints</span>
+                    </li>
+                    <li className="nav-item" title="Leave Application" onClick={() => navigate('/leave')}>
+                        <span className="icon">🏖️</span>
+                        <span className="nav-text">Leave Application</span>
                     </li>
                     <li className="nav-item" title="Settings">
                         <span className="icon">⚙️</span>

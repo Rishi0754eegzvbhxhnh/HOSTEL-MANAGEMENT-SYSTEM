@@ -6,74 +6,70 @@ import Dashboard from "./components/Dashboard.tsx";
 import RoomBooking from "./components/RoomBooking.tsx";
 import FoodMenu from "./components/FoodMenu.tsx";
 import ComplaintForm from "./components/ComplaintForm.tsx";
+import LeaveApplication from "./components/LeaveApplication.tsx";
 
 function Home() {
   return (
-    <div className="home-container">
-      {/* Background Image setup */}
-      <div
-        className="hero-background"
-        style={{
-          backgroundImage: 'url("https://i.pinimg.com/originals/ae/bd/a5/aebda5a3ba478eda1324412ff14b38f1.jpg")',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundColor: '#111', // Solid backing for when image doesn't fill entirely
-          width: '100vw',
-          height: '100vh',
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}
-      >
-        {/* Dark overlay to make text pop */}
-        <div style={{
-          position: 'absolute',
-          top: 0, left: 0, right: 0, bottom: 0,
-          backgroundColor: 'rgba(0,0,0,0.5)',
-          zIndex: 1
-        }}></div>
-
-        {/* Content overlaid on top */}
-        <div className="home-content" style={{ zIndex: 2, textAlign: 'center', color: 'white' }}>
-          <header className="home-header" style={{ marginBottom: '40px' }}>
-            <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0,0,0,0.5)', margin: 0 }}>
-              Welcome to HostelPro
-            </h1>
-            <p style={{ fontSize: '1.2rem', marginTop: '10px', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
-              Your premium student accommodation management portal
-            </p>
-          </header>
-
-          <div className="home-auth-buttons" style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
-            <Link to="/login">
-              <button style={{
-                padding: '12px 30px', fontSize: '18px', backgroundColor: 'transparent',
-                color: 'white', border: '2px solid white', borderRadius: '30px',
-                cursor: 'pointer', fontWeight: 'bold', transition: 'all 0.3s'
-              }}
-                onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'white'; e.currentTarget.style.color = 'black'; }}
-                onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'white'; }}
-              >
-                Sign In
-              </button>
-            </Link>
-            <Link to="/register">
-              <button style={{
-                padding: '12px 30px', fontSize: '18px', backgroundColor: '#e61cb0',
-                color: 'white', border: '2px solid #e61cb0', borderRadius: '30px',
-                cursor: 'pointer', fontWeight: 'bold', transition: 'all 0.3s', boxShadow: '0 4px 15px rgba(230, 28, 176, 0.4)'
-              }}
-                onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
-              >
-                Register Now
-              </button>
-            </Link>
-          </div>
+    <div className="screen-container" style={{ flexDirection: 'column', textAlign: 'center' }}>
+      <div className="float-animation" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1 style={{ 
+          fontSize: '4rem', 
+          fontWeight: '800', 
+          color: '#fff', 
+          textShadow: '0 4px 10px rgba(0,0,0,0.3)',
+          marginBottom: '40px',
+          lineHeight: '1.2'
+        }}>
+          WELCOME TO<br/>HOSTELPRO
+        </h1>
+        
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '300px' }}>
+          <Link to="/login" style={{ width: '100%' }}>
+            <button style={{
+              width: '100%',
+              padding: '16px',
+              fontSize: '18px',
+              fontWeight: '600',
+              color: '#fff',
+              background: 'rgba(50, 70, 150, 0.6)',
+              backdropFilter: 'blur(10px)',
+              border: '1px solid rgba(255, 255, 255, 0.4)',
+              borderRadius: '12px',
+              cursor: 'pointer',
+              transition: 'all 0.3s'
+            }}
+            onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(50, 70, 150, 0.8)'; }}
+            onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(50, 70, 150, 0.6)'; }}
+            >
+              LOG IN
+            </button>
+          </Link>
+          <Link to="/register" style={{ width: '100%' }}>
+            <button style={{
+              width: '100%',
+              padding: '16px',
+              fontSize: '18px',
+              fontWeight: '600',
+              color: '#fff',
+              background: 'rgba(100, 80, 160, 0.6)',
+              backdropFilter: 'blur(10px)',
+              border: '1px solid rgba(255, 255, 255, 0.4)',
+              borderRadius: '12px',
+              cursor: 'pointer',
+              transition: 'all 0.3s'
+            }}
+            onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(100, 80, 160, 0.8)'; }}
+            onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(100, 80, 160, 0.6)'; }}
+            >
+              SIGN UP
+            </button>
+          </Link>
         </div>
+
+        <p style={{ marginTop: '30px', fontSize: '14px', color: '#fff', opacity: 0.8 }}>
+          By continuing, you agree to HostelPro's <br/>
+          <b>Terms Of Use</b> and <b>Privacy Policy</b>
+        </p>
       </div>
     </div>
   );
@@ -89,6 +85,7 @@ function App() {
       <Route path="/book-room" element={<RoomBooking />} />
       <Route path="/food-menu" element={<FoodMenu />} />
       <Route path="/complaints" element={<ComplaintForm />} />
+      <Route path="/leave" element={<LeaveApplication />} />
     </Routes>
   );
 }
